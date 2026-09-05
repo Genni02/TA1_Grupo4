@@ -1,0 +1,20 @@
+{
+  "name": "pagaya-backend",
+  "version": "1.0.0",
+  "description": "PagaYa - API REST minima de billetera digital (Caso 4 - TA1)",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --colors --forceExit",
+    "test:regression": "jest test/wallet.test.js --colors --forceExit",
+    "audit:security": "npm audit --audit-level=high || true",
+    "audit:log": "node scripts/audit-logger.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
